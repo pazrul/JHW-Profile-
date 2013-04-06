@@ -1,0 +1,19 @@
+body {
+	background:url('../img/lbp.png');
+}
+* {
+	color:#333;
+}
+a, a:visited {
+	color:#E04006;
+	text-decoration:none;
+
+	&:hover {
+		text-decoration:underline;
+	}
+
+}
+
+h1, h2, h3 {
+	color:#333;
+}

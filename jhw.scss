@@ -1,0 +1,66 @@
+@mixin boxShadow($right, $bottom, $blur, $colorCode){
+	-webkit-box-shadow:$right $bottom $blur $colorCode;
+	-moz-box-shadow: $right $bottom $blur $colorCode;
+	-ms-box-shadow: $right $bottom $blur $colorCode;
+	-o-box-shadow: $right $bottom $blur $colorCode;
+	box-shadow: $right $bottom $blur $colorCode;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=#{$bottom}, Direction=180, Color='#{$colorCode}')";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=#{$bottom}, Direction=180, Color='#{$colorCode}');
+}
+
+* {
+	margin:0;
+	padding:0;
+}
+
+#wrapper {
+	margin-left:29%;
+	
+	& > div {
+	width:100%;
+	padding-top:2%;
+	}
+}
+
+header {
+	padding:1% 1%;
+	width:25%;
+	height:100%;
+	position:fixed;
+	border-right:3px solid #333333;
+
+	dl {
+		font-size:18px;
+	}
+
+	span {
+		font-size:18px;
+		padding-left:30px;
+	}
+
+	#styleChange {
+		padding-left:12%;
+		font-size:30px;
+		list-style-type:none;
+
+	}
+}
+
+#myPhoto {
+	@include boxShadow(3px, 7px, 20px, #000);
+	border:10px solid #fff;
+	margin:3% auto;
+	display:block;
+}
+
+#errored {
+	position:absolute;
+	padding-top:10px;
+	width:100%;
+	height:40px;
+	background-color:orange;
+	text-align:center;
+	top:0;
+	left:0;
+	font-size:24px;
+}
