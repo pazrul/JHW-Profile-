@@ -7,6 +7,12 @@
   #wrapper > div {
     width: 100%;
     padding-top: 2%; }
+  #wrapper dl {
+    width: 100%; }
+  #wrapper dt {
+    width: 28%; }
+  #wrapper dd {
+    float: left; }
 
 header {
   padding: 1% 1%;

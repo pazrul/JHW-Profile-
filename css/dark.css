@@ -12,3 +12,6 @@ a, a:visited {
 
 h1, h2, h3 {
   color: #eee; }
+
+#darkChange {
+  display: none; }
