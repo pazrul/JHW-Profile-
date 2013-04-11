@@ -12,10 +12,16 @@ dl dt {
 dl dd {
   padding: 2px 3px 6px 12px; }
 
+#container {
+  margin: auto;
+  width: 80%;
+  min-width: 800px;
+  position: relative; }
+
 #wrapper {
   margin-left: 381px;
   padding: 0 12px 0 16px;
-  width: 40%; }
+  max-width: 650px; }
   #wrapper > div {
     width: 100%;
     padding-top: 3%; }
@@ -25,6 +31,10 @@ dl dd {
     width: 28%; }
   #wrapper dd {
     float: left; }
+  #wrapper .poster {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 12px; }
 
 header {
   padding: 14px 8px;
@@ -33,7 +43,14 @@ header {
   position: fixed;
   border-right: 3px solid #333333;
   color: #333;
-  background: url("../img/lbp.png"); }
+  background: url("../img/lbp.png");
+  -webkit-box-shadow: 0 9px 12px black;
+  -moz-box-shadow: 0 9px 12px black;
+  -ms-box-shadow: 0 9px 12px black;
+  -o-box-shadow: 0 9px 12px black;
+  box-shadow: 0 9px 12px black;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=9px, Direction=180, Color='black')";
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=9px, Direction=180, Color='black'); }
   header h2 {
     padding-left: 8px; }
   header dl {
@@ -46,12 +63,12 @@ header {
     padding-left: 12%;
     font-size: 30px;
     list-style-type: none; }
-  header #examples {
+  header #examples, header #design {
     list-style-type: none;
     padding-left: 32px; }
-    header #examples li {
+    header #examples li, header #design li {
       padding: 4px 4px; }
-    header #examples a {
+    header #examples a, header #design a {
       text-decoration: underline;
       font-size: 1.1em; }
 

@@ -28,10 +28,18 @@ dl {
 		//width:60%;
 	}
 }
+
+#container {
+	margin:auto;
+	width:80%;
+	min-width:800px;
+	position:relative;
+}
+
 #wrapper {
 	margin-left:381px;
 	padding:0 12px 0 16px;
-	width:40%;
+	max-width:650px;	
 	
 	& > div {
 	width:100%;
@@ -45,6 +53,12 @@ dl {
 	}
 
 	dd {float:left;}
+
+	.poster {
+		width:100%;
+		max-width:100%;
+		margin-top:12px;
+	}
 }
 
 header {
@@ -55,6 +69,7 @@ header {
 	border-right:3px solid #333333;
 	color:#333;
 	background:url('../img/lbp.png');
+	@include boxShadow(0,9px, 12px, #000);
 
 	h2 {
 		padding-left:8px;
@@ -76,7 +91,7 @@ header {
 		list-style-type:none;
 
 	}
-	#examples {
+	#examples, #design {
 		list-style-type:none;
 		padding-left:32px;
 
