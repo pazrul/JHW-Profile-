@@ -1,8 +1,9 @@
 body {
-  background: url("../img/dark_fish_skin.png"); }
+  background: url("../img/dark_fish_skin.png");
+  font-family: georgia; }
 
 * {
-  color: #eee; }
+  color: #ddd; }
 
 a, a:visited {
   color: #E04006;
@@ -11,7 +12,7 @@ a, a:visited {
     text-decoration: underline; }
 
 h1, h2, h3 {
-  color: #eee; }
+  color: #efefef; }
 
 #darkChange {
   display: none; }
