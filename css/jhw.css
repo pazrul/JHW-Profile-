@@ -13,7 +13,8 @@ dl dd {
   padding: 2px 3px 6px 12px; }
 
 #wrapper {
-  margin-left: 424px;
+  margin-left: 381px;
+  padding: 0 12px 0 16px;
   width: 40%; }
   #wrapper > div {
     width: 100%;
@@ -26,11 +27,13 @@ dl dd {
     float: left; }
 
 header {
-  padding: 1% 1%;
+  padding: 14px 8px;
   width: 361px;
   height: 100%;
   position: fixed;
-  border-right: 3px solid #333333; }
+  border-right: 3px solid #333333;
+  color: #333;
+  background: url("../img/lbp.png"); }
   header h2 {
     padding-left: 8px; }
   header dl {
@@ -43,6 +46,14 @@ header {
     padding-left: 12%;
     font-size: 30px;
     list-style-type: none; }
+  header #examples {
+    list-style-type: none;
+    padding-left: 32px; }
+    header #examples li {
+      padding: 4px 4px; }
+    header #examples a {
+      text-decoration: underline;
+      font-size: 1.1em; }
 
 #myPhoto {
   -webkit-box-shadow: 3px 7px 20px black;

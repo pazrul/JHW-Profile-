@@ -1,17 +1,19 @@
 body {
   background: url("../img/lbp.png"); }
 
-* {
-  color: #333; }
-
 a, a:visited {
   color: #E04006;
   text-decoration: none; }
   a:hover, a:visited:hover {
     text-decoration: underline; }
 
-h1, h2, h3 {
+#wrapper {
   color: #333; }
+  #wrapper h1, #wrapper h2, #wrapper h3 {
+    color: #313131; }
+
+h1 {
+  font-size: 1.75em; }
 
 #lightChange {
   display: none; }

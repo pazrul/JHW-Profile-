@@ -1,9 +1,5 @@
 body {
-  background: url("../img/dark_fish_skin.png");
-  font-family: georgia; }
-
-* {
-  color: #ddd; }
+  background: url("../img/dark_fish_skin.png"); }
 
 a, a:visited {
   color: #E04006;
@@ -11,8 +7,10 @@ a, a:visited {
   a:hover, a:visited:hover {
     text-decoration: underline; }
 
-h1, h2, h3 {
-  color: #efefef; }
+#wrapper {
+  color: #ddd; }
+  #wrapper h1, #wrapper h2, #wrapper h3 {
+    color: #efefef; }
 
 h1 {
   font-size: 1.75em; }

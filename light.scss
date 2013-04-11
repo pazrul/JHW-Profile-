@@ -1,9 +1,7 @@
 body {
 	background:url('../img/lbp.png');
 }
-* {
-	color:#333;
-}
+
 a, a:visited {
 	color:#E04006;
 	text-decoration:none;
@@ -14,8 +12,15 @@ a, a:visited {
 
 }
 
-h1, h2, h3 {
+#wrapper {
 	color:#333;
+	h1, h2, h3 {
+		color:#313131;
+	}
+}
+
+h1 {
+	font-size:1.75em;
 }
 
 #lightChange {
