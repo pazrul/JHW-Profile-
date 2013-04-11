@@ -2,11 +2,22 @@
   margin: 0;
   padding: 0; }
 
+h4 {
+  padding-left: 4px; }
+
+dl dt {
+  padding-left: 4px;
+  font-weight: 600;
+  font-size: 1.05em; }
+dl dd {
+  padding: 2px 3px 6px 12px; }
+
 #wrapper {
-  margin-left: 29%; }
+  margin-left: 424px;
+  width: 40%; }
   #wrapper > div {
     width: 100%;
-    padding-top: 2%; }
+    padding-top: 3%; }
   #wrapper dl {
     width: 100%; }
   #wrapper dt {
@@ -16,12 +27,15 @@
 
 header {
   padding: 1% 1%;
-  width: 25%;
+  width: 361px;
   height: 100%;
   position: fixed;
   border-right: 3px solid #333333; }
+  header h2 {
+    padding-left: 8px; }
   header dl {
-    font-size: 18px; }
+    font-size: 18px;
+    padding-left: 14px; }
   header span {
     font-size: 18px;
     padding-left: 30px; }
@@ -58,3 +72,6 @@ header {
 #skills li {
   list-style-type: none;
   padding-left: 8px; }
+
+#experiences {
+  margin-top: 10px; }

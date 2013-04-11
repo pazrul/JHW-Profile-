@@ -14,5 +14,8 @@ a, a:visited {
 h1, h2, h3 {
   color: #efefef; }
 
+h1 {
+  font-size: 1.75em; }
+
 #darkChange {
   display: none; }

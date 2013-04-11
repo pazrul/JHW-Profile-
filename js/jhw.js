@@ -1,9 +1,9 @@
-changer = function(button){
-	var $active = $('head link:nth-child(2)');
+var changer = function(button){
+	var $active = $('head link[rel="stylesheet"]').eq(1);
 
-	if ($active.attr('href') != button){
-	$('body').fadeOut(800, function(){ 
-		$('head link:nth-child(2)').attr('href', button);
+	if ($active.attr('href') !== button){
+	$('body').fadeOut(800, function(){
+		$('head link[rel="stylesheet"]').eq(1).attr('href', button);
 	});
 		$('body').fadeIn(800);
 	}
@@ -15,10 +15,10 @@ changer = function(button){
 		});
 	}
 
-}
+};
 
 $(document).ready(function(){
-	
+
 	$('#styleChange a').on('click', function(e){
 		e.preventDefault();
 		changer($(this).data('style'));
