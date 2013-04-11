@@ -71,6 +71,16 @@ header {
 	background:url('../img/lbp.png');
 	@include boxShadow(0,9px, 12px, #000);
 
+	#home {
+		color:#111;
+		text-decoration:underline;
+	}
+
+	#homeBottom {
+		padding-top:12px;
+		text-align:center;
+		text-decoration:underline;
+	}
 	h2 {
 		padding-left:8px;
 	}

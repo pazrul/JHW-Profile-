@@ -51,6 +51,13 @@ header {
   box-shadow: 0 9px 12px black;
   -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=9px, Direction=180, Color='black')";
   filter: progid:DXImageTransform.Microsoft.Shadow(Strength=9px, Direction=180, Color='black'); }
+  header #home {
+    color: #111;
+    text-decoration: underline; }
+  header #homeBottom {
+    padding-top: 12px;
+    text-align: center;
+    text-decoration: underline; }
   header h2 {
     padding-left: 8px; }
   header dl {
