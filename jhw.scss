@@ -14,7 +14,7 @@
 }
 
 h4 {
-	padding-left:4px;
+	padding-left:0.615384615%;
 }
 
 dl {
@@ -37,13 +37,13 @@ dl {
 }
 
 #wrapper {
-	margin-left:381px;
+	margin-left:40%;
 	padding:0 12px 0 16px;
 	max-width:650px;	
 	
 	& > div {
 	width:100%;
-	padding-top:3%;
+	padding-top:5%;
 	}
 
 	dl {width:100%;}
@@ -62,14 +62,15 @@ dl {
 }
 
 header {
-	padding:14px 8px;
-	width:361px;
+	padding:1% 0.6%;
 	height:100%;
 	position:fixed;
 	border-right:3px solid #333333;
 	color:#333;
 	background:url('../img/lbp.png');
 	@include boxShadow(0,9px, 12px, #000);
+	left:6%;
+	top:0;
 
 	#home {
 		color:#111;
@@ -86,7 +87,6 @@ header {
 	}
 
 	dl {
-		font-size:18px;
 		padding-left:14px;
 	}
 
@@ -97,16 +97,16 @@ header {
 
 	#styleChange {
 		padding-left:12%;
-		font-size:30px;
+		font-size:1.9em;
 		list-style-type:none;
 
 	}
 	#examples, #design {
 		list-style-type:none;
-		padding-left:32px;
+		padding-left:10%;
 
 		li{
-			padding:4px 4px;
+			padding:1.5%;
 		}
 		a {
 			text-decoration:underline;
@@ -120,6 +120,10 @@ header {
 	border:10px solid #fff;
 	margin:3% auto;
 	display:block;
+	width:320px;
+	height:320px;
+	background-image:url('http://www.gravatar.com/avatar/5bdf54e63db76acd4dfc3d3db12bccc2?s=400');
+	background-size:cover;
 }
 
 #errored {
@@ -140,10 +144,200 @@ header {
 	}
 	li{
 		list-style-type:none;
-		padding-left:8px;
+		padding-left:1.2%;
 
 	}
 }
 #experiences{
-	margin-top:10px;
+	margin-top:1.7%;
 }
+
+//Media Queries
+
+/*@media all and (max-width: 320px) {
+	header {
+
+	}
+
+	#myPhoto {
+		width:100px;
+		height:100px;
+		border:4px solid #fff;
+	}
+}*/
+
+@media all and (max-width: 482px){
+	#container {
+		width:100%;
+		min-width:0;
+	}
+
+	header {
+		position:relative;
+		left:0;
+		display:block;
+		width:100%;
+
+		h1 {
+			font-size:1.0em;
+			text-align:center;
+		}
+		h2 {
+			font-size:0.8em;
+			text-align:center;
+		}
+		h4 {
+			font-size:.6em;
+
+		}
+		dl {
+			font-size:0.6em;
+			text-align:center;
+		}
+
+		span {
+			padding-left:2px;
+			margin: 0 auto;
+			display:block;
+			width:50%;
+		}
+
+		#styleChange, #examples, #design{
+			display:block;
+			margin: 1% auto;
+			width:200px;
+			font-size:1em;
+		}
+
+	}
+
+	#myPhoto {
+		display:none;
+	}
+	#wrapper {
+		font-size:.8em;
+		margin-left:0;
+	}
+
+
+}
+
+@media all and (max-width:599px) and (min-width:483px){
+	header {
+		left:0px;
+		h1 {
+			font-size:1em;
+		}
+		h2 {
+			font-size:0.8em;
+		}
+		h4 {
+			font-size:.6em;
+		}
+		dl {
+			font-size:0.6em;
+		}
+		span {
+			font-size:.9em;
+		}
+	}
+
+	#myPhoto {
+		width:100px;
+		height:100px;
+		border:6px solid #fff;
+	}
+
+	#container {
+		min-width:500px;
+	}
+
+	#wrapper {
+		margin-left:36%;
+		max-width:400px;
+		font-size:0.8em;
+	}
+}
+
+@media all and (max-width:770px) and (min-width: 600px) {
+	header {
+		left:0px;
+		h1 {
+			font-size:1.2em;
+		}
+		h2 {
+			font-size:1.0em;
+		}
+		h4 {
+			font-size:.8em;
+		}
+		dl {
+			font-size:0.8em;
+		}
+	}
+
+	#myPhoto {
+		width:150px;
+		height:150px;
+		border:8px solid #fff;
+	}
+
+	#container {
+		min-width:600px;
+	}
+
+	#wrapper {
+		margin-left:40%;
+		width:55%;
+		max-width:800px;
+		font-size:.8em;
+	}
+}
+
+@media all and (min-width:771px) and (max-width:1024px){
+	header {
+		left:3%;
+		h1 {
+			font-size:1.4em;
+		}
+		h2 {
+			font-size:1.2em;
+		}
+		h4 {
+			font-size:1em;
+		}
+
+	}
+	#myPhoto {
+		width:200px;
+		height:200px;
+	}
+	#container {
+		min-width:650px;
+	}
+	#wrapper {
+		margin-left:35%;
+		width:70%;
+	}
+}
+
+@media all and (min-width:1024px){
+	#myPhoto {
+		width:300px;
+		height:300px;
+	}
+}
+
+@media all and (min-width:1200px){
+	#myPhoto {
+		width:400px;
+		height:400px;
+	}
+	#wrapper {
+		width:65%;
+		max-width:1000px;
+	}
+}
+
+
+

@@ -3,7 +3,7 @@
   padding: 0; }
 
 h4 {
-  padding-left: 4px; }
+  padding-left: 0.615384615%; }
 
 dl dt {
   padding-left: 4px;
@@ -19,12 +19,12 @@ dl dd {
   position: relative; }
 
 #wrapper {
-  margin-left: 381px;
+  margin-left: 40%;
   padding: 0 12px 0 16px;
   max-width: 650px; }
   #wrapper > div {
     width: 100%;
-    padding-top: 3%; }
+    padding-top: 5%; }
   #wrapper dl {
     width: 100%; }
   #wrapper dt {
@@ -37,8 +37,7 @@ dl dd {
     margin-top: 12px; }
 
 header {
-  padding: 14px 8px;
-  width: 361px;
+  padding: 1% 0.6%;
   height: 100%;
   position: fixed;
   border-right: 3px solid #333333;
@@ -50,7 +49,9 @@ header {
   -o-box-shadow: 0 9px 12px black;
   box-shadow: 0 9px 12px black;
   -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=9px, Direction=180, Color='black')";
-  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=9px, Direction=180, Color='black'); }
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=9px, Direction=180, Color='black');
+  left: 6%;
+  top: 0; }
   header #home {
     color: #111;
     text-decoration: underline; }
@@ -61,20 +62,19 @@ header {
   header h2 {
     padding-left: 8px; }
   header dl {
-    font-size: 18px;
     padding-left: 14px; }
   header span {
     font-size: 18px;
     padding-left: 30px; }
   header #styleChange {
     padding-left: 12%;
-    font-size: 30px;
+    font-size: 1.9em;
     list-style-type: none; }
   header #examples, header #design {
     list-style-type: none;
-    padding-left: 32px; }
+    padding-left: 10%; }
     header #examples li, header #design li {
-      padding: 4px 4px; }
+      padding: 1.5%; }
     header #examples a, header #design a {
       text-decoration: underline;
       font-size: 1.1em; }
@@ -89,7 +89,11 @@ header {
   filter: progid:DXImageTransform.Microsoft.Shadow(Strength=7px, Direction=180, Color='black');
   border: 10px solid white;
   margin: 3% auto;
-  display: block; }
+  display: block;
+  width: 320px;
+  height: 320px;
+  background-image: url("http://www.gravatar.com/avatar/5bdf54e63db76acd4dfc3d3db12bccc2?s=400");
+  background-size: cover; }
 
 #errored {
   position: absolute;
@@ -106,7 +110,140 @@ header {
   font-weight: 700; }
 #skills li {
   list-style-type: none;
-  padding-left: 8px; }
+  padding-left: 1.2%; }
 
 #experiences {
-  margin-top: 10px; }
+  margin-top: 1.7%; }
+
+/*@media all and (max-width: 320px) {
+	header {
+
+	}
+
+	#myPhoto {
+		width:100px;
+		height:100px;
+		border:4px solid #fff;
+	}
+}*/
+@media all and (max-width: 482px) {
+  #container {
+    width: 100%;
+    min-width: 0; }
+
+  header {
+    position: relative;
+    left: 0;
+    display: block;
+    width: 100%; }
+    header h1 {
+      font-size: 1.0em;
+      text-align: center; }
+    header h2 {
+      font-size: 0.8em;
+      text-align: center; }
+    header h4 {
+      font-size: .6em; }
+    header dl {
+      font-size: 0.6em;
+      text-align: center; }
+    header span {
+      padding-left: 2px;
+      margin: 0 auto;
+      display: block;
+      width: 50%; }
+    header #styleChange, header #examples, header #design {
+      display: block;
+      margin: 1% auto;
+      width: 200px;
+      font-size: 1em; }
+
+  #myPhoto {
+    display: none; }
+
+  #wrapper {
+    font-size: .8em;
+    margin-left: 0; } }
+@media all and (max-width: 599px) and (min-width: 483px) {
+  header {
+    left: 0px; }
+    header h1 {
+      font-size: 1em; }
+    header h2 {
+      font-size: 0.8em; }
+    header h4 {
+      font-size: .6em; }
+    header dl {
+      font-size: 0.6em; }
+    header span {
+      font-size: .9em; }
+
+  #myPhoto {
+    width: 100px;
+    height: 100px;
+    border: 6px solid white; }
+
+  #container {
+    min-width: 500px; }
+
+  #wrapper {
+    margin-left: 36%;
+    max-width: 400px;
+    font-size: 0.8em; } }
+@media all and (max-width: 770px) and (min-width: 600px) {
+  header {
+    left: 0px; }
+    header h1 {
+      font-size: 1.2em; }
+    header h2 {
+      font-size: 1.0em; }
+    header h4 {
+      font-size: .8em; }
+    header dl {
+      font-size: 0.8em; }
+
+  #myPhoto {
+    width: 150px;
+    height: 150px;
+    border: 8px solid white; }
+
+  #container {
+    min-width: 600px; }
+
+  #wrapper {
+    margin-left: 40%;
+    width: 55%;
+    max-width: 800px;
+    font-size: .8em; } }
+@media all and (min-width: 771px) and (max-width: 1024px) {
+  header {
+    left: 3%; }
+    header h1 {
+      font-size: 1.4em; }
+    header h2 {
+      font-size: 1.2em; }
+    header h4 {
+      font-size: 1em; }
+
+  #myPhoto {
+    width: 200px;
+    height: 200px; }
+
+  #container {
+    min-width: 650px; }
+
+  #wrapper {
+    margin-left: 35%;
+    width: 70%; } }
+@media all and (min-width: 1024px) {
+  #myPhoto {
+    width: 300px;
+    height: 300px; } }
+@media all and (min-width: 1200px) {
+  #myPhoto {
+    width: 400px;
+    height: 400px; }
+
+  #wrapper {
+    width: 65%;
+    max-width: 1000px; } }
